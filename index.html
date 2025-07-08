@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Abrir múltiples webs</title>
+  <script>
+    function abrirPestanas() {
+      const urls = [
+        "https://www.google.com",
+        "https://www.youtube.com",
+        "https://chat.openai.com",
+        // Añade aquí las URLs que quieras
+      ];
+      urls.forEach(url => window.open(url, '_blank'));
+    }
+  </script>
+</head>
+<body onload="abrirPestanas()">
+  <h1>Abriendo tus webs...</h1>
+</body>
+</html>
